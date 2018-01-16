@@ -1,6 +1,6 @@
 FROM openjdk:8-jdk
 
-ENV SDK_TOOLS_URL="https://dl.google.com/android/repository/platform-tools-latest-linux.zip" \
+ENV SDK_TOOLS_URL="https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip" \
     BUILD_TOOLS_VERSION="27.0.3" \
     COMPILE_SDK="26" \
     EMULATOR_SDK="24" \
@@ -47,4 +47,3 @@ RUN echo y | sdk/tools/bin/sdkmanager "extras;google;m2repository" && \
 
 RUN wget --quiet --output-document=android-wait-for-emulator https://raw.githubusercontent.com/travis-ci/travis-cookbooks/0f497eb71291b52a703143c5cd63a217c8766dc9/community-cookbooks/android-sdk/files/default/android-wait-for-emulator && \
     chmod +x android-wait-for-emulator
-    
