@@ -25,7 +25,9 @@ RUN apt-get --quiet update && \
     qtdeclarative5-dev \
     qtbase5-dev \
     libpulse0 \
-    ruby-full
+    ruby-full \
+    gcc \
+    make
 
 RUN cp /bin/bash /bin/sh
 
