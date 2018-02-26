@@ -27,7 +27,10 @@ RUN apt-get --quiet update && \
     libpulse0 \
     ruby-full \
     gcc \
-    make
+    make \
+    build-essential
+
+RUN gem install fastlane -NV
 
 RUN cp /bin/bash /bin/sh
 
@@ -50,5 +53,4 @@ RUN echo y | sdk/tools/bin/sdkmanager "extras;google;m2repository" && \
 
 RUN wget --quiet --output-document=android-wait-for-emulator https://raw.githubusercontent.com/travis-ci/travis-cookbooks/0f497eb71291b52a703143c5cd63a217c8766dc9/community-cookbooks/android-sdk/files/default/android-wait-for-emulator && \
     chmod +x android-wait-for-emulator
-    
-RUN gem install fastlane -NV
+   
