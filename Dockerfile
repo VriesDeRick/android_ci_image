@@ -1,6 +1,6 @@
 FROM openjdk:8-jdk
 
-ENV SDK_TOOLS_URL="https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip" \
+ENV SDK_TOOLS_URL="https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip" \
     BUILD_TOOLS_VERSION="27.0.3" \
     COMPILE_SDK="26" \
     EMULATOR_SDK="24" \
