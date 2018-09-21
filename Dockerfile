@@ -30,7 +30,7 @@ RUN apt-get --quiet update && \
     make \
     build-essential
 
-RUN gem install fastlane -NV
+RUN gem install fastlane -NV && bundle install
 
 RUN cp /bin/bash /bin/sh
 
